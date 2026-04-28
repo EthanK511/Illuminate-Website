@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Booth plan</title>
+  <desc id="desc">A simple trade show booth layout with display zones and lamp tables.</desc>
+  <rect width="1200" height="900" fill="#ffffff"/>
+  <rect x="60" y="60" width="1080" height="780" rx="36" fill="#f7f7f7" stroke="#000000" stroke-opacity="0.12" stroke-width="4"/>
+  <rect x="120" y="120" width="240" height="180" rx="26" fill="#000000"/>
+  <rect x="390" y="120" width="300" height="180" rx="26" fill="#ffffff" stroke="#000000" stroke-opacity="0.12" stroke-width="3"/>
+  <rect x="720" y="120" width="360" height="180" rx="26" fill="#ffc800"/>
+  <rect x="120" y="340" width="960" height="320" rx="28" fill="#ffffff" stroke="#000000" stroke-opacity="0.12" stroke-width="3"/>
+  <rect x="160" y="380" width="280" height="210" rx="22" fill="#000000" fill-opacity="0.92"/>
+  <rect x="480" y="380" width="280" height="210" rx="22" fill="#ffc800"/>
+  <rect x="800" y="380" width="240" height="210" rx="22" fill="#ffffff" stroke="#000000" stroke-opacity="0.12" stroke-width="3"/>
+  <circle cx="300" cy="485" r="54" fill="#ffc800"/>
+  <circle cx="620" cy="485" r="54" fill="#000000"/>
+  <circle cx="920" cy="485" r="54" fill="#ffc800" fill-opacity="0.25"/>
+  <rect x="240" y="690" width="720" height="72" rx="20" fill="#000000"/>
+  <rect x="260" y="710" width="200" height="32" rx="16" fill="#ffc800"/>
+  <rect x="482" y="710" width="200" height="32" rx="16" fill="#ffffff"/>
+  <rect x="704" y="710" width="200" height="32" rx="16" fill="#ffc800"/>
+  <text x="150" y="95" fill="#000000" font-family="Arial, sans-serif" font-size="34" font-weight="700">TRADE SHOW BOOTH PLAN</text>
+  <text x="150" y="845" fill="#6b6b6b" font-family="Arial, sans-serif" font-size="28">Left: demos. Center: product table. Right: pricing and packaging.</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Illuminate hero lamp</title>
+  <desc id="desc">A minimal lamp illustration with black, white, and yellow brand colors.</desc>
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="45%" r="48%">
+      <stop offset="0%" stop-color="#ffc800" stop-opacity="1" />
+      <stop offset="35%" stop-color="#ffc800" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#ffc800" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="900" fill="#000000"/>
+  <rect width="1200" height="900" fill="url(#glow)"/>
+  <circle cx="600" cy="300" r="210" fill="#ffc800" fill-opacity="0.16"/>
+  <circle cx="600" cy="300" r="145" fill="#ffc800" fill-opacity="0.32"/>
+  <rect x="538" y="180" width="124" height="470" rx="18" fill="#ffc800"/>
+  <rect x="492" y="632" width="216" height="44" rx="22" fill="#ffffff"/>
+  <rect x="520" y="663" width="160" height="18" rx="9" fill="#ffc800"/>
+  <path d="M600 180v470" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-dasharray="0 24" opacity="0.22"/>
+</svg>

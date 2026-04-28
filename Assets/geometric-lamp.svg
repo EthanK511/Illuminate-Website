@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-labelledby="title desc">
+  <title id="title">Geometric lamp</title>
+  <desc id="desc">A geometric triangular lamp in black, white, and yellow.</desc>
+  <rect width="900" height="700" fill="#ffffff"/>
+  <circle cx="450" cy="230" r="170" fill="#ffc800" fill-opacity="0.14"/>
+  <ellipse cx="450" cy="544" rx="220" ry="28" fill="#000000" fill-opacity="0.08"/>
+  <path d="M450 155L305 470h290z" fill="#000000"/>
+  <path d="M450 188l-110 248h220z" fill="#ffffff"/>
+  <path d="M450 188l-52 120h104z" fill="#ffc800"/>
+  <path d="M450 250l-86 196h172z" fill="#d9d9d9"/>
+  <path d="M450 250l-34 78h68z" fill="#000000"/>
+  <rect x="350" y="472" width="200" height="46" rx="23" fill="#7a7a7a"/>
+  <rect x="372" y="518" width="156" height="38" rx="19" fill="#000000"/>
+  <rect x="392" y="528" width="116" height="14" rx="7" fill="#ffc800"/>
+</svg>

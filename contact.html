@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact | Illuminate</title>
+    <meta name="description" content="Contact Illuminate for trade show questions and orders." />
+    <link rel="icon" href="Assets/Favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="site.js"></script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="container header-row">
+          <a class="brand" href="index.html" aria-label="Illuminate home">
+            <span class="brand-mark"><img src="Assets/Logo/Black%20On%20White.png" alt="Illuminate logo" /></span>
+            <span class="brand-text">
+              <strong>ILLUMINATE</strong>
+              <span>Brighten your day</span>
+            </span>
+          </a>
+          <button class="nav-button" type="button" data-nav-button>Menu</button>
+          <input class="nav-toggle" id="nav-toggle" type="checkbox" data-nav-toggle />
+          <nav class="site-nav" aria-label="Primary">
+            <a href="index.html" data-nav-link>Home</a>
+            <a href="about.html" data-nav-link>About</a>
+            <a href="products.html" data-nav-link>Products</a>
+            <a href="news.html" data-nav-link>In the News</a>
+            <a href="contact.html" aria-current="page" data-nav-link>Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="container hero-grid">
+            <div>
+              <span class="eyebrow">Contact</span>
+              <h1>Easy to reach. Easy to buy.</h1>
+              <p class="lede">
+                Keep this page simple: one email, one location, and a few links. Customers should know exactly how to find you at the trade show or follow up afterward.
+              </p>
+            </div>
+            <div class="card pad">
+              <h3>Primary location</h3>
+              <p>GHS Trade Show, May 19, 2026</p>
+              <p class="meta">Portland-area launch; follow-up orders can be handled online after the event.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container grid-2">
+            <article class="card pad">
+              <h2>Contact information</h2>
+              <div class="contact-list">
+                <div class="contact-item">
+                  <strong>Email</strong>
+                  <a href="mailto:hello@illuminate.example">hello@illuminate.example</a>
+                </div>
+                <div class="contact-item">
+                  <strong>Location</strong>
+                  <p>Portland, Oregon and the GHS Trade Show booth.</p>
+                </div>
+                <div class="contact-item">
+                  <strong>Social</strong>
+                  <p>Instagram, Etsy, or a simple online form can go here later.</p>
+                </div>
+              </div>
+            </article>
+            <article class="card pad">
+              <h2>Simple message form</h2>
+              <p class="meta">This is a lightweight contact area for the website. If you want, you can replace it later with a Google Form.</p>
+              <form>
+                <div style="display:grid; gap:0.9rem;">
+                  <label>
+                    <span>Name</span>
+                    <input type="text" name="name" style="width:100%; margin-top:0.35rem; padding:0.85rem 1rem; border-radius:14px; border:1px solid rgba(0,0,0,0.12); font:inherit;" />
+                  </label>
+                  <label>
+                    <span>Email</span>
+                    <input type="email" name="email" style="width:100%; margin-top:0.35rem; padding:0.85rem 1rem; border-radius:14px; border:1px solid rgba(0,0,0,0.12); font:inherit;" />
+                  </label>
+                  <label>
+                    <span>Message</span>
+                    <textarea name="message" rows="5" style="width:100%; margin-top:0.35rem; padding:0.85rem 1rem; border-radius:14px; border:1px solid rgba(0,0,0,0.12); font:inherit; resize:vertical;"></textarea>
+                  </label>
+                  <button class="button primary" type="submit">Send inquiry</button>
+                </div>
+              </form>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-row">
+          <img src="Assets/Logo/Black%20On%20White.png" alt="Illuminate logo" />
+          <p>Illuminate. Bright, minimal lighting for modern spaces.</p>
+          <p>© <span data-year></span> Illuminate</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -2,13 +2,14 @@
 
 :root {
   --yellow: #ffc800;
+  --teal: #3ddbd6;
   --white: #ffffff;
   --black: #000000;
   --ink: #111111;
   --muted: #6b6b6b;
-  --line: rgba(0, 0, 0, 0.12);
-  --surface: rgba(255, 255, 255, 0.92);
-  --shadow: 0 18px 60px rgba(0, 0, 0, 0.14);
+  --line: rgba(255, 255, 255, 0.06);
+  --surface: rgba(255, 255, 255, 0.04);
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 @keyframes fadeInUp {
@@ -24,10 +25,10 @@
 
 @keyframes glowPulse {
   0%, 100% {
-    box-shadow: 0 0 20px rgba(255, 200, 0, 0.3);
+    box-shadow: 0 0 12px rgba(255, 200, 0, 0.12);
   }
   50% {
-    box-shadow: 0 0 40px rgba(255, 200, 0, 0.6);
+    box-shadow: 0 0 22px rgba(255, 200, 0, 0.18);
   }
 }
 
@@ -89,15 +90,21 @@ img {
   display: block;
 }
 
+/* round images by default; keep brand/logo overrides below */
+img {
+  border-radius: 20px;
+}
+
 body::before {
   content: '';
   position: fixed;
   inset: 0;
   pointer-events: none;
-  background-image: linear-gradient(rgba(255, 200, 0, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 200, 0, 0.03) 1px, transparent 1px);
-  background-size: 42px 42px;
-  mask-image: linear-gradient(180deg, rgba(255, 200, 0, 0.08), transparent 70%);
-  opacity: 0.35;
+  /* remove noisy grid for minimal look */
+  background-image: none;
+  background-size: 0 0;
+  mask-image: none;
+  opacity: 0.08;
 }
 
 .site-shell {
@@ -138,7 +145,7 @@ body::before {
 .brand-mark {
   width: 3rem;
   height: 3rem;
-  border-radius: 12px;
+  border-radius: 6px;
   background: transparent;
   display: grid;
   place-items: center;
@@ -169,7 +176,7 @@ body::before {
   font-size: 2rem;
   letter-spacing: 0.08em;
   line-height: 0.9;
-  color: var(--yellow);
+  color: #ffffff;
 }
 
 .brand-text span {
@@ -185,7 +192,7 @@ body::before {
   display: none;
   border: 1px solid rgba(255, 200, 0, 0.2);
   background: rgba(255, 200, 0, 0.1);
-  border-radius: 12px;
+  border-radius: 25px;
   padding: 0.7rem 1rem;
   font: inherit;
   color: var(--yellow);
@@ -206,7 +213,7 @@ body::before {
 
 .site-nav a {
   padding: 0.7rem 0.95rem;
-  border-radius: 12px;
+  border-radius: 25px;
   border: 1px solid transparent;
   color: #999;
   transition: all 0.3s ease;
@@ -236,7 +243,7 @@ body::before {
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 0.8rem;
-  border-radius: 12px;
+  border-radius: 25px;
   background: rgba(255, 200, 0, 0.15);
   color: var(--yellow);
   font-size: 0.9rem;
@@ -257,9 +264,10 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(4.5rem, 12vw, 8.5rem);
-  line-height: 0.82;
-  margin-top: 1rem;
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  line-height: 1.02;
+  margin-top: 0.2rem;
+  color: #ffffff;
 }
 
 h2 {
@@ -295,7 +303,7 @@ h3 {
   gap: 0.45rem;
   min-height: 2.9rem;
   padding: 0.75rem 1.1rem;
-  border-radius: 12px;
+  border-radius: 25px;
   border: 1px solid var(--yellow);
   transition: transform 0.18s ease, background 0.18s ease, color 0.18s ease;
   cursor: pointer;
@@ -333,24 +341,16 @@ h3 {
 }
 
 .hero-card {
-  border-radius: 30px;
-  background: linear-gradient(135deg, rgba(255, 200, 0, 0.15), rgba(255, 200, 0, 0.08));
+  border-radius: 25px;
+  background: rgba(255,255,255,0.02);
   color: #fff;
-  padding: 1.4rem;
-  box-shadow: 0 0 40px rgba(255, 200, 0, 0.2), inset 0 0 40px rgba(255, 200, 0, 0.05);
+  padding: 0.6rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45);
   overflow: hidden;
 }
 
 .hero-card::before {
-  content: '';
-  position: absolute;
-  inset: auto 2rem 2rem auto;
-  width: 12rem;
-  height: 12rem;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 200, 0, 0.5) 0%, rgba(255, 200, 0, 0.12) 30%, transparent 68%);
-  filter: blur(10px);
-  animation: glowPulse 4s ease-in-out infinite;
+  display: none;
 }
 
 .hero-card img {
@@ -371,7 +371,7 @@ h3 {
 
 .stat {
   padding: 0.9rem;
-  border-radius: 18px;
+  border-radius: 25px;
   background: rgba(255, 200, 0, 0.1);
   border: 1px solid rgba(255, 200, 0, 0.2);
 }
@@ -406,7 +406,7 @@ h3 {
 .grid-3,
 .grid-2 {
   display: grid;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .grid-3 {
@@ -418,7 +418,7 @@ h3 {
 }
 
 .card {
-  border-radius: 20px;
+  border-radius: 25px;
   background: rgba(30, 30, 30, 0.8);
   border: 1px solid rgba(255, 200, 0, 0.15);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(255, 200, 0, 0.05);
@@ -428,13 +428,13 @@ h3 {
 }
 
 .card:hover {
-  border-color: rgba(255, 200, 0, 0.3);
-  box-shadow: 0 8px 40px rgba(255, 200, 0, 0.15), inset 0 0 20px rgba(255, 200, 0, 0.08);
-  transform: translateY(-4px);
+  border-color: rgba(255, 200, 0, 0.18);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.55);
+  transform: translateY(-3px);
 }
 
 .card.pad {
-  padding: 1.3rem;
+  padding: 1.6rem;
 }
 
 .card-image {
@@ -475,10 +475,16 @@ h3 {
   align-items: center;
   min-height: 2.3rem;
   padding: 0.45rem 0.8rem;
-  border-radius: 12px;
-  background: rgba(255, 200, 0, 0.1);
+  border-radius: 25px;
+  background: rgba(255, 200, 0, 0.08);
   color: var(--yellow);
-  border: 1px solid rgba(255, 200, 0, 0.2);
+  border: 1px solid rgba(255, 200, 0, 0.12);
+}
+
+.badge.alt {
+  background: rgba(255, 200, 0, 0.08);
+  color: var(--yellow);
+  border-color: rgba(255, 200, 0, 0.12);
 }
 
 .brand-swatch {
@@ -488,7 +494,7 @@ h3 {
 }
 
 .swatch {
-  border-radius: 20px;
+  border-radius: 25px;
   padding: 1rem;
   border: 1px solid rgba(255, 200, 0, 0.2);
 }
@@ -519,7 +525,7 @@ h3 {
 
 .video-frame {
   position: relative;
-  border-radius: 20px;
+  border-radius: 25px;
   overflow: hidden;
   border: 1px solid rgba(255, 200, 0, 0.2);
   background: linear-gradient(135deg, rgba(255, 200, 0, 0.1), rgba(30, 30, 30, 0.8));
@@ -601,7 +607,7 @@ h3 {
 }
 
 .news-figure {
-  border-radius: 20px;
+  border-radius: 25px;
   overflow: hidden;
   border: 1px solid rgba(255, 200, 0, 0.15);
   background: rgba(30, 30, 30, 0.8);
@@ -636,7 +642,7 @@ h3 {
 
 .contact-item {
   padding: 1rem;
-  border-radius: 18px;
+  border-radius: 25px;
   border: 1px solid rgba(255, 200, 0, 0.15);
   background: rgba(30, 30, 30, 0.8);
   transition: all 0.3s ease;
@@ -657,11 +663,11 @@ h3 {
 }
 
 .site-footer {
-  padding: 2.5rem 0 3.5rem;
-  border-top: 1px solid rgba(255, 200, 0, 0.15);
+  padding: 1rem 0 1.25rem;
+  border-top: 1px solid rgba(255, 200, 0, 0.12);
   color: #888;
   text-align: center;
-  animation: fadeInUp 0.8s ease-out 0.3s backwards;
+  animation: fadeInUp 0.6s ease-out 0.15s backwards;
 }
 
 .footer-row {
@@ -673,7 +679,23 @@ h3 {
 }
 
 .footer-row img {
-  width: 8.5rem;
+  height: 3.2rem;
+  width: auto;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* header hide on scroll */
+.site-header {
+  transition: transform 0.28s ease, box-shadow 0.2s ease;
+}
+.site-header.hidden {
+  transform: translateY(-110%);
+}
+
+/* brand hover glow */
+.brand:hover .brand-text strong {
+  text-shadow: 0 0 18px rgba(255,200,0,0.9);
 }
 
 input[type="text"],
